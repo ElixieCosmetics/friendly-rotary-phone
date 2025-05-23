@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 200">
+  <!-- Olive green leaf with dewdrop -->
+  <g>
+    <!-- Leaf -->
+    <path fill="#8A9A78" d="M150,40 c-10,-15 -25,-30 -45,-35 c0,0 -15,40 -5,70 c10,30 35,40 55,30 c20,-10 15,-35 -5,-65 z" />
+    
+    <!-- Dewdrop -->
+    <path fill="#8A9A78" stroke="#FFFFFF" stroke-width="0.5" d="M120,75 c0,8 7,15 15,15 s15,-7 15,-15 s-7,-15 -15,-15 S120,67 120,75 z" />
+    <path fill="#FFFFFF" fill-opacity="0.6" d="M130,70 c0,2 2,4 4,4 s4,-2 4,-4 s-2,-4 -4,-4 S130,68 130,70 z" />
+  </g>
+  
+  <!-- Elixie text -->
+  <g fill="#8A9A78">
+    <path d="M60,120 h40 v5 h-35 v15 h30 v5 h-30 v15 h35 v5 h-40 z" />
+    <path d="M105,120 h5 v40 h20 v5 h-25 z" />
+    <path d="M135,120 h5 v45 h-5 z" />
+    <path d="M150,120 h5 l15,20 v-20 h5 v45 h-5 l-15,-20 v20 h-5 z" />
+    <path d="M185,120 h5 v40 h20 v5 h-25 z" />
+    <path d="M215,120 h5 v45 h-5 z" />
+    <path d="M225,120 h35 v5 h-15 v40 h-5 v-40 h-15 z" />
+  </g>
+  
+  <!-- COSMETICS text -->
+  <g fill="#8A9A78">
+    <path d="M78,180 h-18 v-2 h18 c5,0 9,-4 9,-9 s-4,-9 -9,-9 h-18 v-2 h18 c6,0 11,5 11,11 s-5,11 -11,11 z" />
+    <path d="M105,180 c-6,0 -11,-5 -11,-11 s5,-11 11,-11 s11,5 11,11 s-5,11 -11,11 z m0,-20 c-5,0 -9,4 -9,9 s4,9 9,9 s9,-4 9,-9 s-4,-9 -9,-9 z" />
+    <path d="M131,180 h-3 l-2,-5 h-12 l-2,5 h-3 l10,-22 h2 l10,22 z m-16,-7 h10 l-5,-11 l-5,11 z" />
+    <path d="M145,180 h-2 v-22 h2 l12,16 v-16 h2 v22 h-2 l-12,-16 v16 z" />
+    <path d="M177,180 h-2 v-20 h-8 v-2 h18 v2 h-8 v20 z" />
+    <path d="M192,180 h-2 v-22 h2 v22 z" />
+    <path d="M215,180 h-18 v-22 h18 c6,0 11,5 11,11 s-5,11 -11,11 z m0,-20 h-16 v18 h16 c5,0 9,-4 9,-9 s-4,-9 -9,-9 z" />
+    <path d="M242,180 h-3 l-2,-5 h-12 l-2,5 h-3 l10,-22 h2 l10,22 z m-16,-7 h10 l-5,-11 l-5,11 z" />
+  </g>
+</svg>

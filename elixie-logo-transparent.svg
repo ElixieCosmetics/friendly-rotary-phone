@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 300">
+  <!-- Leaf with drop symbol -->
+  <path fill="#8A9A78" d="M250 50c-10-15-30-35-50-40 0 0-20 60-5 100 15 40 45 40 65 20 20-20 10-50-10-80zM230 110c0 10-8 18-18 18s-18-8-18-18 8-18 18-18 18 8 18 18z"/>
+  
+  <!-- Elixie text -->
+  <g fill="#8A9A78">
+    <path d="M145 170h80v6h-74v30h65v6h-65v30h74v6h-80z"/>
+    <path d="M235 170h6v66h35v6h-41z"/>
+    <path d="M285 170h6v72h-6z"/>
+    <path d="M305 170h6l20 26v-26h6v72h-6l-20-26v26h-6z"/>
+    <path d="M345 170h6v66h35v6h-41z"/>
+  </g>
+  
+  <!-- COSMETICS text -->
+  <g fill="#8A9A78">
+    <path d="M170 250h10c10 0 18 8 18 18s-8 18-18 18h-10v-36z"/>
+    <path d="M215 250c10 0 18 8 18 18s-8 18-18 18-18-8-18-18 8-18 18-18z"/>
+    <path d="M250 250h3l15 36h-6l-3-7h-15l-3 7h-6l15-36zm4 24l-5-12-5 12h10z"/>
+    <path d="M280 250h5l12 20v-20h5v36h-5l-12-20v20h-5z"/>
+    <path d="M330 256h-12v-6h30v6h-12v30h-6z"/>
+    <path d="M355 250h6v36h-6z"/>
+    <path d="M380 250h10c10 0 18 8 18 18s-8 18-18 18h-10v-36z"/>
+  </g>
+</svg>
