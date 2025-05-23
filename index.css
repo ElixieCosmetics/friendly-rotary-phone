@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Nunito:wght@300;400;500;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* Updated colors to match the transparent background of new botanical images */
+  --background: 0 0% 100%; /* Pure white background */
+  --foreground: 0 0% 10%; /* Dark text */
+  --muted: 0 0% 96%;
+  --muted-foreground: 0 0% 45%;
+  --popover: 0 0% 100%;
+  --popover-foreground: 0 0% 10%;
+  --card: 0 0% 100%;
+  --card-foreground: 0 0% 10%;
+  --border: 0 0% 90%;
+  --input: 30 16% 90%;
+  --primary: 30 16% 50%; /* Muted brown/beige */
+  --primary-foreground: 0 0% 100%;
+  --secondary: 40 60% 70%; /* Marigold yellow from image */
+  --secondary-foreground: 0 0% 10%;
+  --accent: 260 30% 70%; /* Light lavender from flowers */
+  --accent-foreground: 0 0% 10%;
+  --destructive: 0 70% 50%;
+  --destructive-foreground: 0 0% 100%;
+  --ring: 0 0% 10%;
+  --radius: 0.25rem; /* Reduced radius for minimalist look */
+  
+  /* Chart colors */
+  --chart-1: 30 16% 50%;
+  --chart-2: 40 60% 70%;
+  --chart-3: 260 30% 70%;
+  --chart-4: 140 30% 60%; /* Green from leaves */
+  --chart-5: 0 0% 45%;
+  
+  /* Sidebar */
+  --sidebar-background: 36 33% 97%;
+  --sidebar-foreground: 0 0% 10%;
+  --sidebar-primary: 30 16% 50%;
+  --sidebar-primary-foreground: 0 0% 100%;
+  --sidebar-accent: 260 30% 70%;
+  --sidebar-accent-foreground: 0 0% 10%;
+  --sidebar-border: 30 16% 90%;
+  --sidebar-ring: 0 0% 10%;
+}
+
+.dark {
+  --background: 240 10% 3.9%;
+  --foreground: 0 0% 98%;
+  --muted: 240 3.7% 15.9%;
+  --muted-foreground: 240 5% 64.9%;
+  --popover: 240 10% 3.9%;
+  --popover-foreground: 0 0% 98%;
+  --card: 240 10% 3.9%;
+  --card-foreground: 0 0% 98%;
+  --border: 240 3.7% 15.9%;
+  --input: 240 3.7% 15.9%;
+  --primary: 187 65% 53%;
+  --primary-foreground: 211 100% 99%;
+  --secondary: 0 100% 94%;
+  --secondary-foreground: 240 5.9% 10%;
+  --accent: 60 100% 94%;
+  --accent-foreground: 240 5.9% 10%;
+  --destructive: 0 62.8% 30.6%;
+  --destructive-foreground: 0 0% 98%;
+  --ring: 240 4.9% 83.9%;
+  --radius: 0.5rem;
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply font-sans antialiased text-foreground;
+    font-family: 'Nunito', sans-serif;
+    background: linear-gradient(135deg, 
+      hsl(var(--background)) 0%, 
+      hsl(var(--background)) 25%, 
+      hsl(40 20% 98%) 50%, 
+      hsl(var(--background)) 75%, 
+      hsl(var(--background)) 100%);
+    background-size: 400% 400%;
+    background-attachment: fixed;
+  }
+  
+  /* Subtle botanical texture overlay */
+  body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.02;
+    pointer-events: none;
+    z-index: -1;
+    background-image: 
+      radial-gradient(circle at 20% 20%, hsl(var(--primary)) 1px, transparent 1px),
+      radial-gradient(circle at 80% 80%, hsl(var(--secondary)) 1px, transparent 1px),
+      radial-gradient(circle at 40% 60%, hsl(var(--accent)) 0.5px, transparent 0.5px);
+    background-size: 80px 80px, 120px 120px, 60px 60px;
+    background-position: 0 0, 40px 40px, 20px 20px;
+  }
+
+  h1, h2, h3 {
+    font-family: 'Italiana', serif;
+    @apply font-normal;
+  }
+
+  h4, h5, h6 {
+    font-family: 'Cormorant Garamond', serif;
+    @apply font-medium;
+  }
+
+  .logo-font {
+    font-family: 'Italiana', serif;
+  }
+
+  .body-font {
+    font-family: 'Cormorant Garamond', serif;
+  }
+}
+
+@layer utilities {
+  .product-card {
+    @apply transition-all duration-300 ease-in-out;
+  }
+  
+  .product-card:hover {
+    @apply transform -translate-y-1 shadow-lg;
+  }
+}
+
+/* We're using Google Fonts which should be loaded in the HTML instead of @font-face */
